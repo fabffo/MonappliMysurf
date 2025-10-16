@@ -3,7 +3,7 @@ from fastapi import FastAPI, Query
 from fastapi.responses import PlainTextResponse
 import json, math, urllib.request
 
-app = FastAPI(title="Surf Score API (plain text)")
+app = FastAPI(title="Surf Score API testa (plain text)")
 
 # ---------- Utils ----------
 def scale(value, in_min, in_max, out_min=0.0, out_max=1.0):
