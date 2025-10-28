@@ -1,0 +1,143 @@
+{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            padding: 10px;
+        }
+
+        /* LIGNE 1 - HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #2980b9;
+            color: white;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .header .vague {
+            font-size: 20px;
+        }
+
+        .header .titre {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .header .utilisateur {
+            font-size: 16px;
+        }
+
+        /* LIGNE 2 - VAGUES ET VENT */
+        .conditions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .colonne-vague {
+            display: flex;
+            flex-direction: column;
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .colonne-vent {
+            display: flex;
+            flex-direction: column;
+            background: #27ae60;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .colonne-vague div,
+        .colonne-vent div {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .colonne-vague .valeur,
+        .colonne-vent .valeur {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* LIGNE 3 - MARÉES */
+        .marees {
+            display: flex;
+            background: #e74c3c;
+            color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .maree-item {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .maree-item .label {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .maree-item .heure {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* LIGNE 4 - PRÉVISIONS */
+        .previsions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .jour {
+            display: flex;
+            flex-direction: column;
+            background: #9b59b6;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .jour .titre-jour {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .jour .contenu {
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .conditions {
+                flex-direction: column;
+            }
+            
+            .previsions {
+                flex-direction: column;
+            }
+            
+            .header {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
