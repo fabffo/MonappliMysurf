@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>MySurf - Simple</title>
 </head>
 <body>
     <!-- LIGNE 1 - HEADER -->
-    <div class="header">
-        <div class="vague">🌊</div>
-        <div class="titre">Hossegor - Plage Nord</div>
-        <div class="utilisateur">👤 Utilisateur</div>
-    </div>
+<div class="header">
+    <div class="vague">🌊</div>  <!-- Remettez l'emoji ici -->
+    <select id="selecteur-spot" class="selecteur-spot">
+        <option value="">Chargement des spots...</option>
+    </select>
+    <div class="utilisateur">👤 Utilisateur</div>  <!-- Et l'emoji utilisateur aussi -->
+</div>
 
     <!-- LIGNE 2 - CONDITIONS VAGUES ET VENT -->
     <div class="conditions">
         <!-- COLONNE VAGUE -->
         <div class="colonne-vague">
             <div>Hauteur vague:</div>
-            <div class="valeur">1.5 m</div>
+            <div class="valeur" id="hauteur-vague">-- m</div>
             <div>Direction vague:</div>
-            <div class="valeur">SW (225°)</div>
+            <div class="valeur" id="direction-vague">-- (--°)</div>
             <div>Période vague:</div>
-            <div class="valeur">12 s</div>
+            <div class="valeur" id="periode-vague">-- s</div>
         </div>
-        
+
         <!-- COLONNE VENT -->
         <div class="colonne-vent">
             <div>Force du vent:</div>
-            <div class="valeur">15 kt</div>
+            <div class="valeur" id="force-vent">-- kt</div>
             <div>Direction du vent:</div>
-            <div class="valeur">NE (45°)</div>
+            <div class="valeur" id="direction-vent">-- (--°)</div>
         </div>
     </div>
 
@@ -39,60 +41,20 @@
     <div class="marees">
         <div class="maree-item">
             <div class="label">Marée Basse</div>
-            <div class="heure">08:30</div>
+            <div class="heure" id="maree-basse">--:--</div>
         </div>
         <div class="maree-item">
             <div class="label">Marée Haute</div>
-            <div class="heure">14:15</div>
+            <div class="heure" id="maree-haute">--:--</div>
         </div>
     </div>
 
     <!-- LIGNE 4 - PRÉVISIONS -->
-    <div class="previsions">
-        <div class="jour">
-            <div class="titre-jour">AUJOURD'HUI</div>
-            <div class="contenu">
-                ⭐⭐⭐⭐<br>
-                1.5m - 12s<br>
-                15kt NE
-            </div>
-        </div>
-        
-        <div class="jour">
-            <div class="titre-jour">JOUR +1</div>
-            <div class="contenu">
-                ⭐⭐⭐<br>
-                1.2m - 10s<br>
-                20kt E
-            </div>
-        </div>
-        
-        <div class="jour">
-            <div class="titre-jour">JOUR +2</div>
-            <div class="contenu">
-                ⭐⭐⭐⭐⭐<br>
-                2.0m - 14s<br>
-                10kt SW
-            </div>
-        </div>
-        
-        <div class="jour">
-            <div class="titre-jour">JOUR +3</div>
-            <div class="contenu">
-                ⭐⭐<br>
-                0.8m - 8s<br>
-                25kt N
-            </div>
-        </div>
-        
-        <div class="jour">
-            <div class="titre-jour">JOUR +4</div>
-            <div class="contenu">
-                ⭐⭐⭐<br>
-                1.3m - 11s<br>
-                18kt NW
-            </div>
-        </div>
+    <div class="previsions" id="previsions">
+        <!-- Les prévisions seront chargées dynamiquement -->
     </div>
+
+    <!-- SCRIPT JAVASCRIPT -->
+    <script src="app.js"></script>
 </body>
 </html>

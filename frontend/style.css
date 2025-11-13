@@ -141,3 +141,36 @@
                 text-align: center;
             }
         }
+/* ============================================ */
+/* STYLE POUR LE SELECTEUR DE SPOT */
+/* ============================================ */
+
+.selecteur-spot {
+    background-color: white;
+    color: #2196F3;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    max-width: 400px;
+}
+
+.selecteur-spot:hover {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+.selecteur-spot:focus {
+    border-color: #1976D2;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+/* Style des options du select */
+.selecteur-spot option {
+    padding: 10px;
+    font-size: 1em;
+}
